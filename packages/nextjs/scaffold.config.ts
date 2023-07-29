@@ -1,5 +1,7 @@
 import * as chains from "wagmi/chains";
 
+console.log(chains.cronosTestnet);
+
 export type ScaffoldConfig = {
   targetNetwork: chains.Chain;
   pollingInterval: number;
@@ -11,7 +13,8 @@ export type ScaffoldConfig = {
 
 const scaffoldConfig = {
   // The network where your DApp lives in
-  targetNetwork: chains.hardhat,
+  // targetNetwork: chains.hardhat,
+  targetNetwork: chains.cronosTestnet,
 
   // The interval at which your front-end polls the RPC servers for new data
   // it has no effect on the local network
