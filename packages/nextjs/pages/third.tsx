@@ -1,5 +1,13 @@
 // import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
+import { colorObj } from "../utils/theme";
+import { Button } from "@mui/material";
+import { styled } from "@mui/material/styles";
 import type { NextPage } from "next";
+
+const MyButton = styled(Button)`
+  background-color: ${colorObj.primary}};
+  color: white;
+`;
 
 const ExampleUI: NextPage = () => {
   return (
@@ -20,6 +28,10 @@ const ExampleUI: NextPage = () => {
           </Flex> */}
 
           <h1>Hello Third!</h1>
+
+          <MyButton color="primary" variant="contained">
+            Hello World
+          </MyButton>
         </div>
       </div>
     </>
